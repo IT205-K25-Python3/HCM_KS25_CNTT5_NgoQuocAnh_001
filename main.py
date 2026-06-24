@@ -17,12 +17,7 @@ def menu_add_player(manager: PlayerManager):
         else:
             break
 
-    while True:
-        name = input_str("  Player name (EN)    : ")
-        if all(c.isascii() for c in name):
-            break
-        print("Lỗi: Tên phải là tiếng Anh (chỉ dùng ký tự Latin).")
-
+    name = input_str("Player name    : ")
     speed = input_float("Speed score(0-10) : ")
     technique = input_float("Technique(0-10) : ")
     goal = input_float("Goal score(0-10) : ")
