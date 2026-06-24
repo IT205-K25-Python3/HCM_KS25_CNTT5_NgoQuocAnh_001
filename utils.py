@@ -21,7 +21,6 @@ def input_int(prompt: str, min_val: int = 1):
 
 
 def input_str(prompt: str):
-    """Nhập chuỗi không được để trống."""
     while True:
         value = input(prompt).strip()
         if value:
